@@ -6,53 +6,47 @@
 <style>
 body {
     margin: 0;
-    font-family: monospace;
     background: black;
     color: #00ff9f;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.sidebar {
-    position: fixed;
-    width: 200px;
-    height: 100%;
-    background: black;
-    border-right: 2px solid #00ff9f;
-}
-
-.logo {
-    padding: 15px;
+.container {
     text-align: center;
 }
 
-.main {
-    margin-left: 200px;
-    padding: 10px;
-}
-
-.game-list button {
-    margin: 5px;
-    padding: 10px;
-    border-radius: 20px;
+button {
+    display: block;
+    margin: 15px auto;
+    padding: 15px 30px;
+    border-radius: 30px;
     border: 1px solid #00ff9f;
     background: transparent;
     color: #00ff9f;
+    font-size: 18px;
     cursor: pointer;
+    width: 200px;
+}
+
+button:hover {
+    background: #00ff9f;
+    color: black;
 }
 </style>
 </head>
 
 <body>
 
-<div class="sidebar">
-    <div class="logo">[[ SPAMTON 97 ]]</div>
-</div>
+<div class="container">
+    <h1>[[ SPAMTON 97 ]]</h1>
 
-<div class="main">
-    <h2>Games</h2>
-
-    <div class="game-list">
-        <!-- YOU ADD GAMES HERE -->
-    </div>
+    <a href="games.html"><button>Games</button></a>
+    <a href="proxy.html"><button>Proxy</button></a>
+    <a href="ai.html"><button>AI</button></a>
 </div>
 
 </body>
